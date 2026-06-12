@@ -1,1 +1,19 @@
-
+{
+  "ecus": {
+    "engine": {
+      "id": "0x101",
+      "max_rpm": 6500
+    },
+    "speed": {
+      "id": "0x102",
+      "max_speed": 180
+    },
+    "body": {
+      "id": "0x103"
+    }
+  },
+  "attack_profile": {
+    "rpm_spoof": true,
+    "speed_spoof": true
+  }
+}
