@@ -5,7 +5,7 @@ import sys
 import os
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
-from logs.logger import log_message
+from can_bus import send
 
 
 # Simulated CAN message IDs (like real automotive ECUs)
@@ -50,13 +50,17 @@ def main():
         body_msg = format_can_message(BODY_ECU_ID, generate_body_data())
 
         messages = [engine_msg, speed_msg, body_msg]
-
+        
         for msg in messages:
             print(json.dumps(msg, indent=2))
-            log_message(msg)
+            send(msg)
 
         print("-" * 50)
         time.sleep(2)
+
+        
+
+        send({"debug": "simulator alive"})
 
 
 if __name__ == "__main__":
