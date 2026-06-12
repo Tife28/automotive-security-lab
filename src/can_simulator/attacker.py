@@ -1,6 +1,10 @@
 import time
 import random
 import json
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
 from logs.logger import log_message
 log_message(msg)
 
