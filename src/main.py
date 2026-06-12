@@ -8,6 +8,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 SIM_PATH = os.path.join(BASE_DIR, "can_simulator/can_simulator.py")
 ATTACKER_PATH = os.path.join(BASE_DIR, "can_simulator/attacker.py")
+logger = subprocess.Popen(["python3", "src/can_simulator/bus_logger.py"])
 
 # Start simulator
 sim = subprocess.Popen(["python3", SIM_PATH])
