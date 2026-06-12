@@ -1,6 +1,8 @@
 import time
 import random
 import json
+from logs.logger import log_message
+log_message(msg)
 
 # Simulated CAN message IDs (like real automotive ECUs)
 ENGINE_ECU_ID = 0x101
