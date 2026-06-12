@@ -1,14 +1,13 @@
-import queue
+import copy
 
-# Global shared message bus
-CAN_BUS = queue.Queue()
+SUBSCRIBERS = []
 
+def subscribe(callback):
+    SUBSCRIBERS.append(callback)
 
 def send(message):
-    CAN_BUS.put(message)
+    for sub in SUBSCRIBERS:
+        sub(copy.deepcopy(message))
 
-
-def receive():
-    if not CAN_BUS.empty():
-        return CAN_BUS.get()
-    return None
+def debug_test():
+    send({"test": "message"})
