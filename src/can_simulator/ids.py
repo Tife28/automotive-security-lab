@@ -1,53 +1,36 @@
+from can_bus import subscribe, debug_test
 import time
-import json
 
-# Simple baseline thresholds (real-world inspired)
 MAX_RPM = 6500
 MAX_SPEED = 180
 
 
-def analyze_message(msg):
-    data = msg["data"]
+def process(msg):
+    print("[IDS RECEIVED]", msg)
 
-    alerts = []
+    data = msg.get("data", {})
 
-    # RPM anomaly detection
-    if "rpm" in data:
-        if data["rpm"] > MAX_RPM:
-            alerts.append(f"RPM anomaly detected: {data['rpm']}")
+    # 🚨 Explicit attack detection
+    if msg.get("ATTACK") == True:
+        print("[ALERT] ATTACK MESSAGE DETECTED:", msg)
 
-    # Speed anomaly detection
-    if "speed_kmh" in data:
-        if data["speed_kmh"] > MAX_SPEED:
-            alerts.append(f"Speed anomaly detected: {data['speed_kmh']} km/h")
+    # 🚨 RPM anomaly
+    if "rpm" in data and data["rpm"] > MAX_RPM:
+        print("[ALERT] RPM anomaly detected:", msg)
 
-    return alerts
+    # 🚨 Speed anomaly
+    if "speed_kmh" in data and data["speed_kmh"] > MAX_SPEED:
+        print("[ALERT] Speed anomaly detected:", msg)
 
 
 def main():
-    print("\n[IDS] Intrusion Detection System Started...\n")
+    print("[IDS] Live monitoring started...\n")
+
+    subscribe(process)
+    debug_test()
 
     while True:
-        # In real systems this would read CAN bus
-        # Here we simulate input via manual paste/log file concept
-
-        raw_input_msg = input("Enter CAN message (JSON): ")
-
-        try:
-            msg = json.loads(raw_input_msg)
-            alerts = analyze_message(msg)
-
-            if alerts:
-                print("\n[!!! ALERT !!!]")
-                for alert in alerts:
-                    print(alert)
-            else:
-                print("[OK] Message normal")
-
-        except Exception as e:
-            print("Invalid message format")
-
-        print("-" * 50)
+        time.sleep(1)
 
 
 if __name__ == "__main__":
