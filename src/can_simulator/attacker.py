@@ -6,7 +6,6 @@ import os
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
 from logs.logger import log_message
-log_message(msg)
 
 TARGET_CAN_IDS = ["0x101", "0x102"]  # Engine + Speed ECUs
 
