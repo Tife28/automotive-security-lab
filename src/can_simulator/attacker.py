@@ -41,6 +41,11 @@ def main():
 
         print(json.dumps(attack_rpm, indent=2))
         print(json.dumps(attack_speed, indent=2))
+        messages = [attack_rpm, attack_speed]
+
+        for msg in messages:
+            print(json.dumps(msg, indent=2))
+            log_message(msg)   
 
         print("-" * 60)
         time.sleep(2)
