@@ -6,7 +6,7 @@ import os
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
 from logs.logger import log_message
-log_message(msg)
+
 
 # Simulated CAN message IDs (like real automotive ECUs)
 ENGINE_ECU_ID = 0x101
@@ -53,6 +53,7 @@ def main():
 
         for msg in messages:
             print(json.dumps(msg, indent=2))
+            log_message(msg)
 
         print("-" * 50)
         time.sleep(2)
