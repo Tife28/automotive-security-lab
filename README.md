@@ -1,5 +1,3 @@
-# automotive-security-lab-
-A simulated in-vehicle CAN network security lab for studying automotive cybersecurity threats, CAN bus analysis, and intrusion detection.
 # Automotive Cybersecurity Lab
 
 This project simulates a vehicle Controller Area Network (CAN) environment for studying automotive cybersecurity concepts, including:
