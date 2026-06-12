@@ -1,6 +1,8 @@
 import time
 import random
 import json
+from logs.logger import log_message
+log_message(msg)
 
 TARGET_CAN_IDS = ["0x101", "0x102"]  # Engine + Speed ECUs
 
