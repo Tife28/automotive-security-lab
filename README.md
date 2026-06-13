@@ -153,22 +153,41 @@ Detection Rules:
 ```text
 automotive-security-lab/
 │
-├── src/
-│   └── can_simulator/
-│       ├── attacker.py
-│       ├── can_bus.py
-│       ├── ids.py
-│       ├── main.py
+├── analysis/
+│   ├── cecu_distribution.png
+│   ├── rpm_chart.png
+│   └── speed_chart.png
+│ 
+├── config/
+│   └── vehicle_network.json
 │   
-│
+├── diagrams/
+│   ├── can_simulator.png
+│   ├── ids_alerts.png
+│   └── logs.png
+│   
 ├── docs/
 │   ├── threat_model.md
 │   └── architecture.md
 │
 ├── logs/
-│   └── sample_can_traffic.log
-│   └── logger/
+│   ├── sample_can_traffic.log
+│   └── bus_logger.py
 │
+├── src/
+│   └── can_simulator/
+│       ├── attacker.py
+│       ├── can_bus.py
+│       ├── can_simulator.py
+│       ├── ids.py
+│       └── main.py
+│   
+├── tools/
+│   ├── can_sniffer.py
+│   └── log_analyzer.py
+│
+└── .gitignore
+└── LICENSE
 └── README.md
 ```
 
