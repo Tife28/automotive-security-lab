@@ -1,9 +1,10 @@
-#Log Analysis
+# Log Analysis
+
 Saved analysis/rpm_chart.png
 Saved analysis/speed_chart.png
 Saved analysis/ecu_distribution.png
 
-===== SUMMARY =====
+## SUMMARY
 Total Messages: 150
 Engine ECU: 60
 Speed ECU: 60
