@@ -225,4 +225,4 @@ automotive-security-lab/
 
 ## Author
 
-Electrical & Electronics Engineer transitioning into Automotive Cybersecurity with a focus on vehicle network security, embedded systems, and intrusion detection.
+Boluwatife Ekundayo- Electrical & Electronics Engineer transitioning into Automotive Cybersecurity
