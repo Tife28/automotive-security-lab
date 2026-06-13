@@ -167,8 +167,9 @@ automotive-security-lab/
 │   └── logs.png
 │   
 ├── docs/
-│   ├── threat_model.md
-│   └── architecture.md
+│   ├── architecture.md
+│   ├── results.md
+│   └── threat_model.md
 │
 ├── logs/
 │   ├── sample_can_traffic.log
@@ -183,6 +184,7 @@ automotive-security-lab/
 │       └── main.py
 │   
 ├── tools/
+│   ├── bus_logger.py
 │   ├── can_sniffer.py
 │   └── log_analyzer.py
 │
