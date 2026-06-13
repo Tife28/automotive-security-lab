@@ -58,10 +58,5 @@ def main():
         print("-" * 50)
         time.sleep(2)
 
-        
-
-        send({"debug": "simulator alive"})
-
-
 if __name__ == "__main__":
     main()
