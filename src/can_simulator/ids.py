@@ -1,4 +1,4 @@
-from can_bus import subscribe, debug_test
+from can_bus import subscribe
 import time
 
 MAX_RPM = 6500
@@ -27,8 +27,7 @@ def main():
     print("[IDS] Live monitoring started...\n")
 
     subscribe(process)
-    debug_test()
-
+    
     while True:
         time.sleep(1)
 
