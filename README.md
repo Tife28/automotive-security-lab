@@ -186,8 +186,8 @@ automotive-security-lab/
 │   ├── can_sniffer.py
 │   └── log_analyzer.py
 │
-└── .gitignore
-└── LICENSE
+├── .gitignore
+├── LICENSE
 └── README.md
 ```
 
