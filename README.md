@@ -154,7 +154,7 @@ Detection Rules:
 automotive-security-lab/
 │
 ├── analysis/
-│   ├── cecu_distribution.png
+│   ├── ecu_distribution.png
 │   ├── rpm_chart.png
 │   └── speed_chart.png
 │ 
