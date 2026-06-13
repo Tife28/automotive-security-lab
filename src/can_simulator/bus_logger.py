@@ -2,8 +2,13 @@ from can_bus import subscribe
 import os
 import json
 import time
+from pathlib import Path
 
-LOG_FILE = "logs/sample_can_traffic.log"
+BASE_DIR = Path(__file__).resolve().parents[2]  # project_root
+LOG_FILE = BASE_DIR / "logs" / "sample_can_traffic.log"
+
+LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
+
 
 def log(msg):
     base_dir = os.path.dirname(os.path.dirname(__file__))
