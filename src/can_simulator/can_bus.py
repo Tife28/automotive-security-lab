@@ -8,6 +8,3 @@ def subscribe(callback):
 def send(message):
     for sub in SUBSCRIBERS:
         sub(copy.deepcopy(message))
-
-def debug_test():
-    send({"test": "message"})
