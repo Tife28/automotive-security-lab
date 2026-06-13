@@ -120,13 +120,30 @@ Detection Rules:
 ## Example Output
 
 ```text
-[IDS RECEIVED] {'can_id': '0x101', 'data': {'rpm': 8500}}
-
-[ALERT] ATTACK MESSAGE DETECTED
-
-[ALERT] RPM anomaly detected
-
-[ALERT] Speed anomaly detected
+{
+  "timestamp": 1781345741.1235647,
+  "can_id": "0x102",
+  "data": {
+    "speed_kmh": 212
+  },
+  "ATTACK": true
+}
+[ALERT] ATTACK MESSAGE DETECTED: {'timestamp': 1781345741.1235647, 'can_id': '0x102', 'data': {'speed_kmh': 212}, 'ATTACK': True}
+[ALERT] Speed anomaly detected: {'timestamp': 1781345741.1235647, 'can_id': '0x102', 'data': {'speed_kmh': 212}, 'ATTACK': True}
+[LOGGED] {'timestamp': 1781345741.1235647, 'can_id': '0x102', 'data': {'speed_kmh': 212}, 'ATTACK': True}
+------------------------------------------------------------
+[IDS RECEIVED] {'debug': 'simulator alive'}
+[LOGGED] {'debug': 'simulator alive'}
+{
+  "timestamp": 1781345741.1284976,
+  "can_id": "0x101",
+  "data": {
+    "rpm": 3871,
+    "load": 33
+  }
+}
+[IDS RECEIVED] {'timestamp': 1781345741.1284976, 'can_id': '0x101', 'data': {'rpm': 3871, 'load': 33}}
+[LOGGED] {'timestamp': 1781345741.1284976, 'can_id': '0x101', 'data': {'rpm': 3871, 'load': 33}}
 ```
 
 ---
