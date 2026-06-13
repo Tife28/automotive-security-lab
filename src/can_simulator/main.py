@@ -1,5 +1,3 @@
-# run_demo.py
-
 import threading,time
 
 from ids import main as ids_main
