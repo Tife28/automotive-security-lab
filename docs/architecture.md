@@ -6,8 +6,6 @@ This project models a simplified in-vehicle network to demonstrate CAN Bus commu
 
 # High-Level Architecture
 
-> *(Insert `assets/diagrams/system_architecture.png` here.)*
-
 ![System Architecture](assets/diagrams/system_architecture.png)
 
 The laboratory is composed of five major components:
