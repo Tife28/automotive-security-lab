@@ -17,6 +17,10 @@
 # Debugger Files
 *.pdb
 
+# Runtime files
+runtime_logs/
+pids/
+
 # Compiled Dynamic libraries
 *.so
 *.dylib
