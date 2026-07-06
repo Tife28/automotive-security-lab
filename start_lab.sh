@@ -26,10 +26,10 @@ echo "[1/4] Setting up vCAN..."
 ./socketcan/setup_vcan.sh
 
 echo
-echo "[2/4] Starting CAN monitor..."
+echo "[2/4] Starting SocketCAN logger..."
 
-candump vcan0 > runtime_logs/candump.log 2>&1 &
-echo $! > pids/candump.pid
+python3 tools/socketcan_logger.py > runtime_logs/logger.log 2>&1 &
+echo $! > pids/logger.pid
 
 echo
 echo "[3/4] Starting simulated ECUs..."
