@@ -61,6 +61,10 @@ compile_commands.json
 # vcpkg
 vcpkg_installed/
 
+# Runtime files
+runtime_logs/
+pids/
+
 # debug information files
 *.dwo
 
