@@ -106,3 +106,44 @@ print(f"Speed Alerts  : {speed_alerts}")
 print()
 
 print("Charts saved in analysis/")
+
+total_frames = engine + speed_ecu + body
+
+report = f"""# SocketCAN Analysis Report
+
+## Capture Summary
+
+| Metric | Value |
+|---------|------:|
+| Total CAN Frames | {total_frames} |
+| Engine ECU Frames | {engine} |
+| Speed ECU Frames | {speed_ecu} |
+| Body ECU Frames | {body} |
+
+## Intrusion Detection Results
+
+| Detection | Count |
+|-----------|------:|
+| RPM Anomalies | {rpm_alerts} |
+| Speed Anomalies | {speed_alerts} |
+
+## Generated Artifacts
+
+- socketcan_rpm_chart.png
+- socketcan_speed_chart.png
+- socketcan_ecu_distribution.png
+
+## Notes
+
+This analysis was generated from captured SocketCAN traffic on the virtual CAN interface (`vcan0`).
+
+The analyzer decoded CAN frames according to the project CAN message specification and applied rule-based intrusion detection using the following thresholds:
+
+- RPM > 6500
+- Speed > 180 km/h
+"""
+
+with open("analysis/socketcan_report.md", "w") as f:
+    f.write(report)
+
+print("Saved analysis/socketcan_report.md")
