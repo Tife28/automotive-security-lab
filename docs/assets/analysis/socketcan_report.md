@@ -4,17 +4,17 @@
 
 | Metric | Value |
 |---------|------:|
-| Total CAN Frames | 249 |
-| Engine ECU Frames | 118 |
-| Speed ECU Frames | 116 |
-| Body ECU Frames | 15 |
+| Total CAN Frames | 651 |
+| Engine ECU Frames | 303 |
+| Speed ECU Frames | 308 |
+| Body ECU Frames | 40 |
 
 ## Intrusion Detection Results
 
 | Detection | Count |
 |-----------|------:|
-| RPM Anomalies | 44 |
-| Speed Anomalies | 45 |
+| RPM Anomalies | 125 |
+| Speed Anomalies | 125 |
 
 ## Generated Artifacts
 
