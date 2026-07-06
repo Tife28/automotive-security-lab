@@ -1,0 +1,9 @@
+title: Automotive Cybersecurity Laboratory
+description: A hands-on automotive cybersecurity lab featuring CAN Bus simulation, SocketCAN integration, attack simulation, intrusion detection, and traffic analysis.
+
+theme: jekyll-theme-cayman
+
+show_downloads: false
+
+github:
+  repository_url: https://github.com/Tife28/automotive-security-lab
