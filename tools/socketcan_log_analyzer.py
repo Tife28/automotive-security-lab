@@ -147,3 +147,22 @@ with open("analysis/socketcan_report.md", "w") as f:
     f.write(report)
 
 print("Saved analysis/socketcan_report.md")
+
+plt.figure(figsize=(6, 5))
+
+plt.bar(
+    ["RPM", "Speed"],
+    [rpm_alerts, speed_alerts]
+)
+
+plt.title("Detected Intrusion Events")
+
+plt.ylabel("Alerts")
+
+plt.grid(axis="y")
+
+plt.savefig("analysis/socketcan_attack_summary.png")
+
+plt.close()
+
+print("Saved analysis/socketcan_attack_summary.png")
