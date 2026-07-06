@@ -45,9 +45,9 @@ pip install python-can
 # Start the laboratory.
 
 ```bash
-chmod +x start_lab.sh stop_lab.sh
+chmod +x start_lab.sh stop_lab.sh socketcan/*.sh socketcan/attacks/*.sh socketcan/ecus/*.sh
 
-./start_lab.sh
+sudo ./start_lab.sh
 ```
 
 The script automatically:
@@ -60,7 +60,7 @@ The script automatically:
 View the live outputs in separate terminals:
 
 ```bash
-tail -f runtime_logs/candump.log
+tail -f runtime_logs/logger.log
 ```
 
 ```bash
@@ -76,6 +76,22 @@ Launch attack scenarios:
 ```bash
 ./socketcan/attacks/run_attacks.sh
 ```
+
+Run the analyzer:
+```bash
+python3 tools/socketcan_log_analyzer.py
+```
+Verify that it generates:
+
+`analysis/socketcan_rpm_chart.png`
+
+`analysis/socketcan_speed_chart.png`
+
+`analysis/socketcan_ecu_distribution.png`
+
+`analysis/socketcan_attack_summary.png`
+
+`analysis/socketcan_report.md`
 
 Stop the laboratory:
 
