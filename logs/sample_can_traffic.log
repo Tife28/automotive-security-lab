@@ -1,0 +1,150 @@
+{"timestamp": 1781349260.034267, "can_id": "0x101", "data": {"rpm": 1246, "load": 73}}
+{"timestamp": 1781349260.0345907, "can_id": "0x101", "data": {"rpm": 8641, "load": 96}, "ATTACK": true}
+{"timestamp": 1781349260.0342715, "can_id": "0x102", "data": {"speed_kmh": 37}}
+{"timestamp": 1781349260.0345955, "can_id": "0x102", "data": {"speed_kmh": 186}, "ATTACK": true}
+{"timestamp": 1781349260.0342753, "can_id": "0x103", "data": {"door_lock": "LOCKED"}}
+{"timestamp": 1781349262.0380702, "can_id": "0x101", "data": {"rpm": 4523, "load": 66}}
+{"timestamp": 1781349262.0381896, "can_id": "0x101", "data": {"rpm": 8213, "load": 100}, "ATTACK": true}
+{"timestamp": 1781349262.038076, "can_id": "0x102", "data": {"speed_kmh": 86}}
+{"timestamp": 1781349262.0380828, "can_id": "0x103", "data": {"door_lock": "UNLOCKED"}}
+{"timestamp": 1781349262.0381966, "can_id": "0x102", "data": {"speed_kmh": 256}, "ATTACK": true}
+{"timestamp": 1781349264.0403216, "can_id": "0x101", "data": {"rpm": 3501, "load": 11}}
+{"timestamp": 1781349264.0403736, "can_id": "0x102", "data": {"speed_kmh": 89}}
+{"timestamp": 1781349264.0406458, "can_id": "0x101", "data": {"rpm": 7399, "load": 97}, "ATTACK": true}
+{"timestamp": 1781349264.040388, "can_id": "0x103", "data": {"door_lock": "UNLOCKED"}}
+{"timestamp": 1781349264.0406623, "can_id": "0x102", "data": {"speed_kmh": 236}, "ATTACK": true}
+{"timestamp": 1781349266.0470397, "can_id": "0x101", "data": {"rpm": 8420, "load": 98}, "ATTACK": true}
+{"timestamp": 1781349266.0466588, "can_id": "0x101", "data": {"rpm": 4655, "load": 13}}
+{"timestamp": 1781349266.0470464, "can_id": "0x102", "data": {"speed_kmh": 200}, "ATTACK": true}
+{"timestamp": 1781349266.046666, "can_id": "0x102", "data": {"speed_kmh": 112}}
+{"timestamp": 1781349266.0466726, "can_id": "0x103", "data": {"door_lock": "LOCKED"}}
+{"timestamp": 1781349268.0505955, "can_id": "0x101", "data": {"rpm": 4077, "load": 54}}
+{"timestamp": 1781349268.0501463, "can_id": "0x101", "data": {"rpm": 8145, "load": 96}, "ATTACK": true}
+{"timestamp": 1781349268.0506086, "can_id": "0x102", "data": {"speed_kmh": 108}}
+{"timestamp": 1781349268.0501583, "can_id": "0x102", "data": {"speed_kmh": 227}, "ATTACK": true}
+{"timestamp": 1781349268.0506203, "can_id": "0x103", "data": {"door_lock": "UNLOCKED"}}
+{"timestamp": 1781349270.0567007, "can_id": "0x101", "data": {"rpm": 8321, "load": 100}, "ATTACK": true}
+{"timestamp": 1781349270.0576577, "can_id": "0x101", "data": {"rpm": 902, "load": 55}}
+{"timestamp": 1781349270.0567138, "can_id": "0x102", "data": {"speed_kmh": 224}, "ATTACK": true}
+{"timestamp": 1781349270.0576708, "can_id": "0x102", "data": {"speed_kmh": 13}}
+{"timestamp": 1781349270.057682, "can_id": "0x103", "data": {"door_lock": "LOCKED"}}
+{"timestamp": 1781349272.0615897, "can_id": "0x101", "data": {"rpm": 8282, "load": 96}, "ATTACK": true}
+{"timestamp": 1781349272.062562, "can_id": "0x101", "data": {"rpm": 5364, "load": 26}}
+{"timestamp": 1781349272.0616045, "can_id": "0x102", "data": {"speed_kmh": 218}, "ATTACK": true}
+{"timestamp": 1781349272.062575, "can_id": "0x102", "data": {"speed_kmh": 8}}
+{"timestamp": 1781349272.0625865, "can_id": "0x103", "data": {"door_lock": "UNLOCKED"}}
+{"timestamp": 1781349274.0648112, "can_id": "0x101", "data": {"rpm": 8188, "load": 97}, "ATTACK": true}
+{"timestamp": 1781349274.064824, "can_id": "0x102", "data": {"speed_kmh": 238}, "ATTACK": true}
+{"timestamp": 1781349274.066902, "can_id": "0x101", "data": {"rpm": 5910, "load": 67}}
+{"timestamp": 1781349274.0669146, "can_id": "0x102", "data": {"speed_kmh": 142}}
+{"timestamp": 1781349274.066924, "can_id": "0x103", "data": {"door_lock": "UNLOCKED"}}
+{"timestamp": 1781349276.0670288, "can_id": "0x101", "data": {"rpm": 7033, "load": 98}, "ATTACK": true}
+{"timestamp": 1781349276.067036, "can_id": "0x102", "data": {"speed_kmh": 210}, "ATTACK": true}
+{"timestamp": 1781349276.0697637, "can_id": "0x101", "data": {"rpm": 2903, "load": 50}}
+{"timestamp": 1781349276.0697694, "can_id": "0x102", "data": {"speed_kmh": 22}}
+{"timestamp": 1781349276.0697753, "can_id": "0x103", "data": {"door_lock": "UNLOCKED"}}
+{"timestamp": 1781349278.0684073, "can_id": "0x101", "data": {"rpm": 7372, "load": 100}, "ATTACK": true}
+{"timestamp": 1781349278.0684206, "can_id": "0x102", "data": {"speed_kmh": 234}, "ATTACK": true}
+{"timestamp": 1781349278.071317, "can_id": "0x101", "data": {"rpm": 933, "load": 79}}
+{"timestamp": 1781349278.0713525, "can_id": "0x102", "data": {"speed_kmh": 64}}
+{"timestamp": 1781349278.0713644, "can_id": "0x103", "data": {"door_lock": "UNLOCKED"}}
+{"timestamp": 1781349280.0708046, "can_id": "0x101", "data": {"rpm": 7962, "load": 100}, "ATTACK": true}
+{"timestamp": 1781349280.0708098, "can_id": "0x102", "data": {"speed_kmh": 201}, "ATTACK": true}
+{"timestamp": 1781349280.0732803, "can_id": "0x101", "data": {"rpm": 1118, "load": 44}}
+{"timestamp": 1781349280.0732896, "can_id": "0x102", "data": {"speed_kmh": 59}}
+{"timestamp": 1781349280.0732949, "can_id": "0x103", "data": {"door_lock": "LOCKED"}}
+{"timestamp": 1781349282.0726016, "can_id": "0x101", "data": {"rpm": 8513, "load": 99}, "ATTACK": true}
+{"timestamp": 1781349282.0726173, "can_id": "0x102", "data": {"speed_kmh": 183}, "ATTACK": true}
+{"timestamp": 1781349282.0752456, "can_id": "0x101", "data": {"rpm": 3437, "load": 79}}
+{"timestamp": 1781349282.0752492, "can_id": "0x102", "data": {"speed_kmh": 52}}
+{"timestamp": 1781349282.0752528, "can_id": "0x103", "data": {"door_lock": "UNLOCKED"}}
+{"timestamp": 1781349284.0735908, "can_id": "0x101", "data": {"rpm": 8101, "load": 96}, "ATTACK": true}
+{"timestamp": 1781349284.073604, "can_id": "0x102", "data": {"speed_kmh": 232}, "ATTACK": true}
+{"timestamp": 1781349284.0761275, "can_id": "0x101", "data": {"rpm": 5689, "load": 85}}
+{"timestamp": 1781349284.0761364, "can_id": "0x102", "data": {"speed_kmh": 74}}
+{"timestamp": 1781349284.0761442, "can_id": "0x103", "data": {"door_lock": "UNLOCKED"}}
+{"timestamp": 1781349286.0758488, "can_id": "0x101", "data": {"rpm": 8441, "load": 95}, "ATTACK": true}
+{"timestamp": 1781349286.0758603, "can_id": "0x102", "data": {"speed_kmh": 225}, "ATTACK": true}
+{"timestamp": 1781349286.0783126, "can_id": "0x101", "data": {"rpm": 3546, "load": 47}}
+{"timestamp": 1781349286.0783212, "can_id": "0x102", "data": {"speed_kmh": 114}}
+{"timestamp": 1781349286.0783558, "can_id": "0x103", "data": {"door_lock": "UNLOCKED"}}
+{"timestamp": 1781349288.078012, "can_id": "0x101", "data": {"rpm": 8605, "load": 99}, "ATTACK": true}
+{"timestamp": 1781349288.0780225, "can_id": "0x102", "data": {"speed_kmh": 191}, "ATTACK": true}
+{"timestamp": 1781349288.0815382, "can_id": "0x101", "data": {"rpm": 3375, "load": 26}}
+{"timestamp": 1781349288.081548, "can_id": "0x102", "data": {"speed_kmh": 35}}
+{"timestamp": 1781349288.0815573, "can_id": "0x103", "data": {"door_lock": "LOCKED"}}
+{"timestamp": 1781349290.080384, "can_id": "0x101", "data": {"rpm": 8049, "load": 96}, "ATTACK": true}
+{"timestamp": 1781349290.0803986, "can_id": "0x102", "data": {"speed_kmh": 227}, "ATTACK": true}
+{"timestamp": 1781349290.0840142, "can_id": "0x101", "data": {"rpm": 2155, "load": 25}}
+{"timestamp": 1781349290.0840228, "can_id": "0x102", "data": {"speed_kmh": 84}}
+{"timestamp": 1781349290.0840313, "can_id": "0x103", "data": {"door_lock": "LOCKED"}}
+{"timestamp": 1781349292.08236, "can_id": "0x101", "data": {"rpm": 8563, "load": 97}, "ATTACK": true}
+{"timestamp": 1781349292.0823658, "can_id": "0x102", "data": {"speed_kmh": 203}, "ATTACK": true}
+{"timestamp": 1781349292.0867348, "can_id": "0x101", "data": {"rpm": 3719, "load": 37}}
+{"timestamp": 1781349292.0867383, "can_id": "0x102", "data": {"speed_kmh": 67}}
+{"timestamp": 1781349292.0867412, "can_id": "0x103", "data": {"door_lock": "UNLOCKED"}}
+{"timestamp": 1781349294.0832224, "can_id": "0x101", "data": {"rpm": 7260, "load": 95}, "ATTACK": true}
+{"timestamp": 1781349294.083236, "can_id": "0x102", "data": {"speed_kmh": 196}, "ATTACK": true}
+{"timestamp": 1781349294.087448, "can_id": "0x101", "data": {"rpm": 916, "load": 14}}
+{"timestamp": 1781349294.087457, "can_id": "0x102", "data": {"speed_kmh": 123}}
+{"timestamp": 1781349294.0874643, "can_id": "0x103", "data": {"door_lock": "UNLOCKED"}}
+{"timestamp": 1781349296.085408, "can_id": "0x101", "data": {"rpm": 8710, "load": 97}, "ATTACK": true}
+{"timestamp": 1781349296.0854168, "can_id": "0x102", "data": {"speed_kmh": 237}, "ATTACK": true}
+{"timestamp": 1781349296.0903149, "can_id": "0x101", "data": {"rpm": 4725, "load": 40}}
+{"timestamp": 1781349296.090373, "can_id": "0x102", "data": {"speed_kmh": 152}}
+{"timestamp": 1781349296.0903957, "can_id": "0x103", "data": {"door_lock": "LOCKED"}}
+{"timestamp": 1781349298.087424, "can_id": "0x101", "data": {"rpm": 7111, "load": 97}, "ATTACK": true}
+{"timestamp": 1781349298.0874386, "can_id": "0x102", "data": {"speed_kmh": 246}, "ATTACK": true}
+{"timestamp": 1781349298.093465, "can_id": "0x101", "data": {"rpm": 1518, "load": 61}}
+{"timestamp": 1781349298.093476, "can_id": "0x102", "data": {"speed_kmh": 115}}
+{"timestamp": 1781349298.0934854, "can_id": "0x103", "data": {"door_lock": "LOCKED"}}
+{"timestamp": 1781349300.0893686, "can_id": "0x101", "data": {"rpm": 8262, "load": 100}, "ATTACK": true}
+{"timestamp": 1781349300.0893745, "can_id": "0x102", "data": {"speed_kmh": 226}, "ATTACK": true}
+{"timestamp": 1781349300.096378, "can_id": "0x101", "data": {"rpm": 5229, "load": 70}}
+{"timestamp": 1781349300.096384, "can_id": "0x102", "data": {"speed_kmh": 84}}
+{"timestamp": 1781349300.0963883, "can_id": "0x103", "data": {"door_lock": "UNLOCKED"}}
+{"timestamp": 1781349302.0903049, "can_id": "0x101", "data": {"rpm": 8110, "load": 96}, "ATTACK": true}
+{"timestamp": 1781349302.090309, "can_id": "0x102", "data": {"speed_kmh": 198}, "ATTACK": true}
+{"timestamp": 1781349302.097316, "can_id": "0x101", "data": {"rpm": 3660, "load": 49}}
+{"timestamp": 1781349302.0973225, "can_id": "0x102", "data": {"speed_kmh": 149}}
+{"timestamp": 1781349302.097335, "can_id": "0x103", "data": {"door_lock": "LOCKED"}}
+{"timestamp": 1781349304.091224, "can_id": "0x101", "data": {"rpm": 8974, "load": 99}, "ATTACK": true}
+{"timestamp": 1781349304.0912368, "can_id": "0x102", "data": {"speed_kmh": 238}, "ATTACK": true}
+{"timestamp": 1781349304.0982285, "can_id": "0x101", "data": {"rpm": 5300, "load": 87}}
+{"timestamp": 1781349304.0982435, "can_id": "0x102", "data": {"speed_kmh": 151}}
+{"timestamp": 1781349304.0982566, "can_id": "0x103", "data": {"door_lock": "LOCKED"}}
+{"timestamp": 1781349306.093602, "can_id": "0x101", "data": {"rpm": 8039, "load": 96}, "ATTACK": true}
+{"timestamp": 1781349306.093606, "can_id": "0x102", "data": {"speed_kmh": 190}, "ATTACK": true}
+{"timestamp": 1781349306.1015103, "can_id": "0x101", "data": {"rpm": 5884, "load": 33}}
+{"timestamp": 1781349306.101515, "can_id": "0x102", "data": {"speed_kmh": 156}}
+{"timestamp": 1781349306.101519, "can_id": "0x103", "data": {"door_lock": "UNLOCKED"}}
+{"timestamp": 1781349308.0943542, "can_id": "0x101", "data": {"rpm": 8627, "load": 95}, "ATTACK": true}
+{"timestamp": 1781349308.094359, "can_id": "0x102", "data": {"speed_kmh": 246}, "ATTACK": true}
+{"timestamp": 1781349308.1024806, "can_id": "0x101", "data": {"rpm": 3279, "load": 33}}
+{"timestamp": 1781349308.1024866, "can_id": "0x102", "data": {"speed_kmh": 171}}
+{"timestamp": 1781349308.1024919, "can_id": "0x103", "data": {"door_lock": "LOCKED"}}
+{"timestamp": 1781349310.0952544, "can_id": "0x101", "data": {"rpm": 8730, "load": 95}, "ATTACK": true}
+{"timestamp": 1781349310.0952659, "can_id": "0x102", "data": {"speed_kmh": 190}, "ATTACK": true}
+{"timestamp": 1781349310.103545, "can_id": "0x101", "data": {"rpm": 5172, "load": 11}}
+{"timestamp": 1781349310.1035619, "can_id": "0x102", "data": {"speed_kmh": 175}}
+{"timestamp": 1781349310.1035743, "can_id": "0x103", "data": {"door_lock": "UNLOCKED"}}
+{"timestamp": 1781349312.0974169, "can_id": "0x101", "data": {"rpm": 7807, "load": 96}, "ATTACK": true}
+{"timestamp": 1781349312.0974274, "can_id": "0x102", "data": {"speed_kmh": 180}, "ATTACK": true}
+{"timestamp": 1781349312.1069605, "can_id": "0x101", "data": {"rpm": 2784, "load": 50}}
+{"timestamp": 1781349312.1069705, "can_id": "0x102", "data": {"speed_kmh": 18}}
+{"timestamp": 1781349312.10698, "can_id": "0x103", "data": {"door_lock": "UNLOCKED"}}
+{"timestamp": 1781349314.0996766, "can_id": "0x101", "data": {"rpm": 8098, "load": 95}, "ATTACK": true}
+{"timestamp": 1781349314.0996814, "can_id": "0x102", "data": {"speed_kmh": 198}, "ATTACK": true}
+{"timestamp": 1781349314.113363, "can_id": "0x101", "data": {"rpm": 1781, "load": 67}}
+{"timestamp": 1781349314.11337, "can_id": "0x102", "data": {"speed_kmh": 19}}
+{"timestamp": 1781349314.1133757, "can_id": "0x103", "data": {"door_lock": "UNLOCKED"}}
+{"timestamp": 1781349316.1004083, "can_id": "0x101", "data": {"rpm": 7688, "load": 96}, "ATTACK": true}
+{"timestamp": 1781349316.100414, "can_id": "0x102", "data": {"speed_kmh": 249}, "ATTACK": true}
+{"timestamp": 1781349316.1145105, "can_id": "0x101", "data": {"rpm": 1304, "load": 46}}
+{"timestamp": 1781349316.1145225, "can_id": "0x102", "data": {"speed_kmh": 79}}
+{"timestamp": 1781349316.1145325, "can_id": "0x103", "data": {"door_lock": "UNLOCKED"}}
+{"timestamp": 1781349318.1031997, "can_id": "0x101", "data": {"rpm": 8044, "load": 99}, "ATTACK": true}
+{"timestamp": 1781349318.1032033, "can_id": "0x102", "data": {"speed_kmh": 211}, "ATTACK": true}
+{"timestamp": 1781349318.1173608, "can_id": "0x101", "data": {"rpm": 4373, "load": 20}}
+{"timestamp": 1781349318.1173677, "can_id": "0x102", "data": {"speed_kmh": 66}}
+{"timestamp": 1781349318.117374, "can_id": "0x103", "data": {"door_lock": "UNLOCKED"}}
