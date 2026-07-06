@@ -1,125 +1,159 @@
 # System Architecture
 
-## Overview
-
-The Automotive Cybersecurity Lab simulates a simplified in-vehicle network environment. Multiple ECUs generate CAN messages, an attacker module injects malicious traffic, and a monitoring system observes and records network activity.
+This project models a simplified in-vehicle network to demonstrate CAN Bus communication, attack simulation, and intrusion detection in a controlled laboratory environment.
 
 ---
 
-## Architecture Diagram
+# High-Level Architecture
+
+> *(Insert `assets/diagrams/system_architecture.png` here.)*
+
+![System Architecture](assets/diagrams/system_architecture.png)
+
+The laboratory is composed of five major components:
+
+1. ECU Simulation
+2. CAN Communication Layer
+3. Attack Module
+4. Intrusion Detection System
+5. Logging and Analysis
+
+---
+
+# System Workflow
 
 ```text
-+-------------+
-| Engine ECU  |
-+-------------+
+               +----------------+
+               |  Engine ECU    |
+               +----------------+
+                       │
+               +----------------+
+               |  Speed ECU     |
+               +----------------+
+                       │
+               +----------------+
+               |  Body ECU      |
+               +----------------+
+                       │
+                       ▼
+             =====================
+                CAN BUS (vCAN)
+             =====================
+                       │
+      ┌────────────────┼─────────────────┐
+      ▼                ▼                 ▼
 
-+-------------+
-| Speed ECU   |
-+-------------+
-
-+-------------+
-| Body ECU    |
-+-------------+
-        |
-        v
-+----------------+
-| Simulated CAN  |
-|      Bus       |
-+----------------+
-        |
-        +----------------+
-        |                |
-        v                v
-+----------------+  +----------------+
-| IDS Module     |  | Logger Module  |
-+----------------+  +----------------+
-        ^
-        |
-+----------------+
-| Attacker       |
-+----------------+
++------------+   +------------+   +--------------+
+|  Logger    |   |    IDS     |   |  Attacker    |
++------------+   +------------+   +--------------+
+      │                │
+      ▼                ▼
+ JSON Log File     Security Alerts
+      │
+      ▼
+ Offline Analyzer
+      │
+      ▼
+ Charts & Reports
 ```
 
 ---
 
-## Components
+# ECU Simulation
 
-### ECU Simulator
+The simulator models three Electronic Control Units (ECUs):
 
-Responsibilities:
+| ECU | CAN ID | Purpose |
+|------|-------:|---------|
+| Engine ECU | 0x101 | Engine RPM and load |
+| Speed ECU | 0x102 | Vehicle speed |
+| Body ECU | 0x103 | Door lock status |
 
-* Generate normal CAN traffic
-* Simulate vehicle signals
-* Emulate ECU behavior
-
-Examples:
-
-* Engine RPM
-* Vehicle Speed
-* Door Lock Status
+Each ECU periodically transmits CAN frames that represent normal vehicle behaviour.
 
 ---
 
-### Simulated CAN Bus
+# CAN Communication
 
-Responsibilities:
+The laboratory supports two communication backends:
 
-* Deliver messages between components
-* Emulate CAN network behavior
-* Provide a common communication channel
+## Python CAN Simulator
 
----
+A custom in-memory CAN bus implementation used to demonstrate CAN concepts without requiring Linux CAN support.
 
-### Attacker Module
+## Linux SocketCAN
 
-Responsibilities:
+A realistic CAN networking environment built using:
 
-* Inject malicious CAN messages
-* Simulate ECU spoofing
-* Generate abnormal vehicle data
+- Virtual CAN (`vcan`)
+- SocketCAN
+- CAN-utils
+- `python-can`
 
-Implemented Attacks:
-
-* RPM spoofing
-* Speed spoofing
+This enables interaction with standard Linux CAN tooling.
 
 ---
 
-### Intrusion Detection System (IDS)
+# Attack Module
 
-Responsibilities:
+The attack module injects malicious CAN frames onto the network to simulate common automotive attack scenarios.
 
-* Monitor CAN traffic
-* Detect anomalous messages
-* Generate security alerts
+Current demonstrations include:
 
-Current Detection Methods:
+- Engine RPM spoofing
+- Vehicle speed spoofing
+- CAN message injection
+- Bus flooding
 
-* RPM threshold monitoring
-* Speed threshold monitoring
-* Explicit attack flag detection
+Future work:
 
----
-
-### Logger
-
-Responsibilities:
-
-* Record CAN traffic
-* Support forensic analysis
-* Provide historical records for investigation
+- Replay attacks
+- ECU impersonation
+- Fuzz testing
 
 ---
 
-## Data Flow
+# Intrusion Detection System
 
-1. ECU simulator generates CAN messages.
-2. Messages are transmitted onto the simulated CAN bus.
-3. IDS receives a copy of each message and performs analysis.
-4. Logger records all traffic.
-5. Attacker injects malicious messages.
-6. IDS detects anomalies and generates alerts.
+The IDS continuously monitors CAN traffic for anomalous behaviour.
 
+Current detection rules include:
+
+| Rule | Threshold |
+|--------|-----------|
+| RPM | > 6500 RPM |
+| Speed | > 180 km/h |
+
+When a threshold is exceeded, the IDS immediately generates an alert.
+
+---
+
+# Logging Pipeline
+
+Every CAN frame can be recorded for offline analysis.
+
+Captured traffic is stored as structured JSON, enabling automated analysis and report generation.
+
+The analyzer produces:
+
+- RPM trend
+- Vehicle speed trend
+- ECU traffic distribution
+- Intrusion summary
+- Markdown analysis report
+
+---
+
+# Design Goals
+
+The laboratory was designed with the following objectives:
+
+- Demonstrate CAN Bus fundamentals
+- Explore automotive attack scenarios
+- Build a simple IDS
+- Analyze captured CAN traffic
+- Provide a reproducible SocketCAN laboratory
+- Serve as a portfolio project demonstrating practical automotive cybersecurity skills
 ---
 
 ## Security Monitoring Design
