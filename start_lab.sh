@@ -50,7 +50,7 @@ echo "========================================="
 echo
 echo "Live outputs:"
 echo
-echo "tail -f runtime_logs/candump.log"
+echo "tail -f runtime_logs/logger.log"
 echo "tail -f runtime_logs/ecu.log"
 echo "tail -f runtime_logs/ids.log"
 echo
